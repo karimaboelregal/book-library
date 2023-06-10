@@ -1,38 +1,87 @@
-.App {
+.top-green {
+  padding: 10px;
+  width: 100%;
+  top:0;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  background-color: green;
 }
 
-.App-link {
-  color: #61dafb;
+.open-search {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.open-search i {
+  border-radius: 50%;
+  padding: 20px;
+  color: white;
+  background-color: green;
 }
+
+.main-box {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.main-box input{
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+
+
+.main-box button {
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  background-color: white;
+}
+
+
+.books {
+  position: relative;
+}
+
+.books button {
+  position: absolute;
+  right: 0;
+  bottom: 25%;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  color: white;
+  background-color: green;
+
+}
+.book-shelf-changer {
+  position: absolute;
+  right: 0;
+  top: 65%;
+  bottom: -10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url("https://www.pngfind.com/pngs/m/299-2999787_arrow-down-icon-png-black-down-arrow-png.png");
+  background: #60ac5d;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.book-shelf-changer::before {
+
+}
+
+
+.book-shelf-changer select {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
