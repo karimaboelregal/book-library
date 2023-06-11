@@ -74,7 +74,14 @@
 }
 
 .book-shelf-changer::before {
-
+  font-family: "FontAwesome";
+  color: white;
+  position: absolute;
+  left: 48%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  content: '\f063'
+  
 }
 
 
@@ -83,6 +90,5 @@
   height: 100%;
   opacity: 0;
   cursor: pointer;
-  background-image: url(https://png.pngtree.com/png-vector/20190419/ourmid/pngtree-vector-down-arrow-icon-png-image_956433.jpg);
 }
 
